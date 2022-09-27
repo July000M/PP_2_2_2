@@ -5,7 +5,6 @@ import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class CarServiceImpl implements CarService {
@@ -18,7 +17,6 @@ public class CarServiceImpl implements CarService {
         if ( number >= 5 ) {
             return list;
         }
-
         return list.stream().limit(number).toList();
     }
 }
