@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Car</title>
+  <style>table th, table td {
+      padding: 5px;
+  }</style>
+</head>
+
+<body>
+</h1>Cars</h1>
+
+<table border="1">
+  <tr>
+    <th>carId</th>
+    <th>model</th>
+    <th>series</th>
+  </tr>
+
+  <tr th:each="lst : ${list}">
+    <td th:utext="${lst.carId}">carId</td>
+    <td th:utext="${lst.model}">model</td>
+    <td th:utext="${lst.series}">series</td>
+  </tr>
+
+</table>
+
+</body>
+
+</html>
